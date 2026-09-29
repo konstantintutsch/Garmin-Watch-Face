@@ -10,8 +10,8 @@ keys:
 build:
     monkeyc -d {{ watch }} -f monkey.jungle -o "{{ target }}"  -y {{ key }}.der -w
 
-emulate: build
-    monkeydo "{{ target }}" {{ watch }}
-
 emulator:
     connectiq &
+
+emulate: build
+    monkeydo "{{ target }}" {{ watch }}
