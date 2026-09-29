@@ -61,7 +61,7 @@ class View extends WatchUi.WatchFace {
         // Weather
         var weather = Weather.getCurrentConditions();
 
-        var temperature = Lang.format("$1$°C", [weather.temperature.format("%d")]);
+        var temperature = Lang.format("$1$°C", [Math.round(weather.temperature).toNumber()]);
         dc.drawText(center_x, center_y + fontL_offset + fontM_offset, fontM as WatchUi.FontResource, temperature, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
 
