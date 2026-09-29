@@ -2,9 +2,7 @@
 
 My personal Garmin watch face
 
-![On Wrist](Wrist.jpeg)
-
-![In Emulator](Emulator.png)
+<img src="Wrist.jpeg" alt="Watch face on wrist" width="45%"><img src="Emulator.png" alt="Watch face in emulator" width="45%">
 
 ## Development
 
